@@ -70,7 +70,7 @@ onboard==1.4.1
 openshot-qt==2.4.1
 pandas==1.0.1
 pexpect==4.2.1
-Pillow==5.1.0
+Pillow==8.1.1
 progressbar==2.3
 protobuf==3.11.3
 pycairo==1.16.2
