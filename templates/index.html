@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Food Classifier</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Indian Food Classifier</h1>
+            <p>Upload images of Indian food to classify them!</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <div class="upload-box" id="dropZone">
+                    <input type="file" id="fileInput" accept=".jpg,.jpeg,.png" multiple>
+                    <div class="upload-content">
+                        <img src="../static/images/upload-icon.svg" alt="Upload" class="upload-icon">
+                        <p>Drag & Drop images here or <span class="browse-text">Browse</span></p>
+                        <p class="small-text">Supported formats: JPG, JPEG, PNG</p>
+                    </div>
+                </div>
+                <button id="predictBtn" class="predict-btn" disabled>Predict</button>
+            </div>
+
+            <div class="preview-section">
+                <h2>Selected Images</h2>
+                <div id="imagePreview" class="image-preview-container"></div>
+            </div>
+
+            <div class="results-section">
+                <h2>Results</h2>
+                <div id="results" class="results-container"></div>
+            </div>
+        </main>
+
+        <div id="loadingOverlay" class="loading-overlay">
+            <div class="spinner"></div>
+            <p>Processing...</p>
+        </div>
+    </div>
+
+    <script src="../static/js/app.js"></script>
+</body>
+</html>
